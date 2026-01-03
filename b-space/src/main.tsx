@@ -3,10 +3,8 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 
-import HomePage from './pages/Home.tsx'
-
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <HomePage />
+    <App />
   </StrictMode>,
 )
