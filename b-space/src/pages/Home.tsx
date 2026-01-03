@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Header from "../components/Header.tsx";
+import Footer from "../components/Footer.tsx";
 
 
 function HomePage(){
@@ -11,7 +12,7 @@ function HomePage(){
                 Hello I'm Bank
             </div>
         
-        
+            <Footer/>
         </>
     )
 
