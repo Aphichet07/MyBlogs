@@ -17,25 +17,25 @@ const MarkdownViewer = ({ content }: MarkdownViewerProps) => {
         remarkPlugins={[remarkMath]}
         rehypePlugins={[rehypeKatex]}
         components={{
-          h1: ({ node, ...props }) => (
+          h1: ({ node, ...props } : any) => (
             <div className="mb-8 mt-10">
               <h1 className="text-2xl font-bold mb-2 tracking-tight" {...(props as any)} />
               <div className="border-b border-dashed border-slate-300 w-full" />
             </div>
           ),
           
-          h2: ({ node, ...props }) => (
+          h2: ({ node, ...props } : any) => (
             <h2 className="text-xl font-bold mt-8 mb-4 decoration-slate-300 underline underline-offset-4 decoration-dashed" {...(props as any)} />
           ),
 
-          p: ({ node, ...props }) => (
+          p: ({ node, ...props } : any ) => (
             <p className="mb-6 text-justify leading-7" {...(props as any)} />
           ),
 
-          ul: ({ node, ...props }) => (
+          ul: ({ node, ...props } : any) => (
              <ul className="list-disc list-outside ml-6 mb-6 space-y-2" {...(props as any)} />
           ),
-          ol: ({ node, ...props }) => (
+          ol: ({ node, ...props } : any) => (
              <ol className="list-decimal list-outside ml-6 mb-6 space-y-2" {...(props as any)} />
           ),
 
